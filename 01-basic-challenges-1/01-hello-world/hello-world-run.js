@@ -1,4 +1,4 @@
-const helloWorld = require('./hello-world');
+import { helloWorld } from "./hello-world.js";
 
 const result = helloWorld();
 

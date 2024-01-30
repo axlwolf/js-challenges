@@ -1,14 +1,22 @@
 {
-  "name": "100-js-challenges",
-  "version": "1.0.0",
-  "description": "100 JavaScript challenges for you to solve",
-  "main": "index.js",
-  "scripts": {
-    "test": "jest"
-  },
-  "author": "Brad Traversy",
-  "license": "MIT",
-  "devDependencies": {
-    "jest": "^29.6.1"
-  }
+	"name": "100-js-challenges",
+	"version": "1.0.0",
+	"description": "100 JavaScript challenges for you to solve",
+	"main": "index.js",
+	"type": "module",
+	"scripts": {
+		"test": "jest"
+	},
+	"author": "Brad Traversy",
+	"license": "MIT",
+	"devDependencies": {
+		"@babel/core": "^7.23.9",
+		"babel-jest": "^29.7.0",
+		"jest": "^29.7.0",
+		"jest-environment-jsdom": "^29.7.0"
+	},
+	"dependencies": {
+		"@babel/plugin-transform-modules-commonjs": "^7.23.3",
+		"@babel/preset-env": "^7.23.9"
+	}
 }

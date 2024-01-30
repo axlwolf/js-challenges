@@ -1,3 +1,3 @@
-function helloWorld() {}
-
-module.exports = helloWorld;
+export const helloWorld = () => {
+	return "Hello World!";
+};
