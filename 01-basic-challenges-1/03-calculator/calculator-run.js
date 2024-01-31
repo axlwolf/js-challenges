@@ -1,5 +1,5 @@
-const calculator = require('./calculator');
+import { calculator } from "./calculator.js";
 
-const result = calculator(1, 2, '+');
+const result = calculator(1, 2, "+");
 
 console.log(result);
