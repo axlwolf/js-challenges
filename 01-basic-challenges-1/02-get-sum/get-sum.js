@@ -1,3 +1,1 @@
-function getSum() {}
-
-module.exports = getSum;
+export const getSum = (a, b) => a + b;

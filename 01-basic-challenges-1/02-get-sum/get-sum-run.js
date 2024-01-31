@@ -1,4 +1,4 @@
-const getSum = require('./get-sum');
+import { getSum } from "./get-sum.js";
 
 const result = getSum(1, 10);
 
