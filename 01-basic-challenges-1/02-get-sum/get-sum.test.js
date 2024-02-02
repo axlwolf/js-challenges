@@ -7,7 +7,7 @@ test("Calculating the sum of two numbers", () => {
 
 	// Call the function
 	const result = getSum(num1, num2);
-	console.log(result);
+	//console.log(result);
 	// Check if the result is equal to the expected sum
 	expect(result).toBe(12);
 });
