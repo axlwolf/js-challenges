@@ -1,20 +1,20 @@
-const removeDuplicates = require('./remove-duplicates');
+import removeDuplicates from "./remove-duplicates.js";
 
 const result = removeDuplicates([
-  1,
-  2,
-  3,
-  4,
-  5,
-  5,
-  5,
-  6,
-  7,
-  8,
-  'hello',
-  'hello',
-  true,
-  true,
+	1,
+	2,
+	3,
+	4,
+	5,
+	5,
+	5,
+	6,
+	7,
+	8,
+	"hello",
+	"hello",
+	true,
+	true,
 ]);
 
 console.log(result);
