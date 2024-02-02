@@ -1,4 +1,4 @@
-const fizzBuzzArray = require('./fizzbuzz-array');
+import fizzBuzzArray from "./fizzbuzz-array.js";
 
 const result = fizzBuzzArray(15);
 
