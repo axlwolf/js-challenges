@@ -1,5 +1,5 @@
-const displayLikes = require('./display-likes');
+import displayLikes from "./display-likes.js";
 
-const result = displayLikes(['Alex', 'Jacob', 'Mark', 'Max', 'Jill']);
+const result = displayLikes(["Alex", "Jacob", "Mark", "Max", "Jill"]);
 
 console.log(result);
