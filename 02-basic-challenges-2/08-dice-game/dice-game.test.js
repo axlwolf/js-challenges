@@ -1,4 +1,4 @@
-const diceGameSimulation = require('./dice-game');
+import diceGameSimulation from './dice-game.js';
 
 describe('diceGameSimulation', () => {
   test('should simulate the dice game correctly', () => {
