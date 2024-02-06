@@ -1,4 +1,4 @@
-import diceGameSimulation from './dice-game.js';
+import diceGameSimulation from "./dice-game.js";
 
 const result = diceGameSimulation(10);
 
