@@ -7,5 +7,4 @@ const products = [
 ];
 
 const result = calculateTotalSalesWithTax(products, 8);
-
 console.log(result);
