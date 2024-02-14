@@ -1,5 +1,5 @@
-const generateHashtag = require('./hashtag-generator');
+import generateHashtag from "./hashtag-generator.js";
 
-const result = generateHashtag('hello world');
+const result = generateHashtag("hello world");
 
 console.log(result);

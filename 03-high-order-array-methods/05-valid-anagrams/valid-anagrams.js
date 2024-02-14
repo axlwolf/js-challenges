@@ -5,7 +5,7 @@
  * @param {string} str2 - The second input string.
  * @returns {boolean} - True if the strings are valid anagrams, false otherwise.
  */
-function validAnagrams(str1, str2) {
+const validAnagrams = (str1, str2) => {
   // Split the strings into arrays of characters, then reduce each array into an object of character frequencies for the first string
   const freqCount1 = str1.split("").reduce((acc, char) => {
     // Increment the frequency of the character or initialize it to 1 if not present
@@ -24,4 +24,6 @@ function validAnagrams(str1, str2) {
   return Object.keys(freqCount1).every(
     (char) => freqCount1[char] === freqCount2[char]
   );
-}
+};
+
+export default validAnagrams;
