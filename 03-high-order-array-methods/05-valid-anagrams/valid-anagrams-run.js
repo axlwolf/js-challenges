@@ -1,5 +1,5 @@
-const validAnagrams = require('./valid-anagrams');
+import validAnagrams from "./valid-anagrams.js";
 
-const result = validAnagrams('app', 'ppa');
+const result = validAnagrams("app", "ppa");
 
 console.log(result);
