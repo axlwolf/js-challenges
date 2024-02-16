@@ -1,5 +1,5 @@
-const findMissingLetter = require('./find-missing-letter-refactor');
+import findMissingLetter from "./find-missing-letter-refactor.js";
 
-const result = findMissingLetter(['a', 'b', 'c', 'e']);
+const result = findMissingLetter(["a", "b", "c", "e"]);
 
 console.log(result);
