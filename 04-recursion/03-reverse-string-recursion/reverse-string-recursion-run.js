@@ -1,5 +1,5 @@
-const reverseString = require('./reverse-string-recursion');
+import reverseString from "./reverse-string-recursion.js";
 
-const result = reverseString('hello');
+const result = reverseString("hello");
 
 console.log(result);
