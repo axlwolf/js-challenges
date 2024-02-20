@@ -1,5 +1,5 @@
-const permutations = require('./permutations');
+import permutations from "./permutations.js";
 
-const result = permutations('abc');
+const result = permutations("abc");
 
 console.log(result);
