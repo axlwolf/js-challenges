@@ -1,4 +1,4 @@
-const arraySum = require('./array-sum');
+import arraySum from "./array-sum.js";
 
 const result = arraySum([1, 2, 3, 4, 5]);
 
