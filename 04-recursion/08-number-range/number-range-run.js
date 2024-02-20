@@ -1,4 +1,4 @@
-const numberRange = require('./number-range');
+import numberRange from "./number-range.js";
 
 const result = numberRange(1, 5);
 

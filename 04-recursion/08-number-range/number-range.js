@@ -1,3 +1,35 @@
-function numberRange() {}
+// const numberRange = (num1, num2) => {
+//   if (num1 === num2) {
+//     return [num1];
+//   }
 
-module.exports = numberRange;
+//   const numbers = numberRange(num1, num2 - 1);
+
+//   console.log({ numbers });
+
+//   numbers.push(num2);
+
+//   return numbers;
+// };
+
+// Define the function named numberRange that takes two parameters: startNum and endNum
+const numberRange = (startNum, endNum) => {
+  // Check if the startNum is equal to endNum (base case)
+  if (startNum === endNum) {
+    // If they are equal, return an array containing just the startNum
+    return [startNum];
+  }
+
+  // If they are not equal, create a variable named 'numbers'
+  // Call the numberRange function recursively on a smaller range
+  // This creates an array of numbers from startNum to endNum - 1
+  const numbers = numberRange(startNum, endNum - 1);
+
+  // Push the current value of endNum to the 'numbers' array
+  numbers.push(endNum);
+
+  // Return the 'numbers' array containing all the numbers from startNum to endNum
+  return numbers;
+};
+
+export default numberRange;
