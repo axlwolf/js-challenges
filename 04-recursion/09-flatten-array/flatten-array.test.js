@@ -1,6 +1,6 @@
-const flattenArray = require('./flatten-array');
+import flattenArray from "./flatten-array.js";
 
-test('Flatten Nested Arrays', () => {
+test("Flatten Nested Arrays", () => {
   expect(flattenArray([1, [2, 3], [4, 5, [6]]])).toEqual([1, 2, 3, 4, 5, 6]);
   expect(
     flattenArray([
