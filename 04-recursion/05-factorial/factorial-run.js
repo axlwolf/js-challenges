@@ -1,4 +1,4 @@
-const factorial = require('./factorial');
+import factorial from "./factorial.js";
 
 const result = factorial(5);
 
