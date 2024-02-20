@@ -1,4 +1,4 @@
-const fibonacci = require('./fibonacci');
+import fibonacci from "./fibonacci.js";
 
 const result = fibonacci(8);
 
