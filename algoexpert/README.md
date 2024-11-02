@@ -49,6 +49,7 @@ The solutions are provided in Javascript.
 | :star: | Two Number Sum       |     🟩     | [two-number-sum.js](https://github.com/axlwolf/js-challenges/blob/algoexpert/algoexpert/01-two-number-sum/two-number-sum.js)                   |
 | :star: | Validate Subsequence |     🟩     | [validate-subsequence.js](https://github.com/axlwolf/js-challenges/blob/algoexpert/algoexpert/02-validate-subsequence/validate-subsequence.js) |
 | :star: | Sorted Squared Array |     🟩     | [sorted-squared-array.js](https://github.com/axlwolf/js-challenges/blob/algoexpert/algoexpert/03-sorted-squared-array/sorted-squared-array.js) |
+| :star: | Tournament Winner    |     🟩     | [tournament-winner.js](https://github.com/axlwolf/js-challenges/blob/algoexpert/algoexpert/04-tournament-winner/tournament-winner.js)          |
 
 <a href="#star-algo-expert">Go to Top</a>
 <br/>
