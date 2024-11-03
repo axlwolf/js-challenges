@@ -29,7 +29,7 @@ const results = [0, 0, 1];
 // ];
 // const results = [0, 0, 1];
 
-export const tournamentWinner = (competitions, results) => {
+/*export const tournamentWinner = (competitions, results) => {
   // Initialize a map to keep track of each team's points
   let winnersMap = new Map();
   const winnerPoints = 3; // Points awarded for each win
@@ -66,7 +66,38 @@ export const tournamentWinner = (competitions, results) => {
   }
 
   return currentBestTeam;
+};*/
+// O(n) time | O(k) space - where n is the number
+// of competitions and k is the number of teams
+const HOME_TEAM_WON = 1;
+
+export const tournamentWinner = (competitions, results) => {
+  let currentBestTeam = "";
+  let scores = { [currentBestTeam]: 0 };
+
+  for (let index = 0; index < competitions.length; index++) {
+    const result = results[index];
+    const [homeTeam, awayTeam] = competitions[index];
+
+    const winningTeam = result === HOME_TEAM_WON ? homeTeam : awayTeam;
+
+    updateScores(winningTeam, 3, scores);
+
+    if (scores[winningTeam] > scores[currentBestTeam]) {
+      currentBestTeam = winningTeam;
+    }
+
+    console.log({ homeTeam, awayTeam, scores });
+  }
+
+  return currentBestTeam;
 };
 
+const updateScores = (team, points, scores) => {
+  if (!(team in scores)) {
+    scores[team] = 0;
+  }
+  scores[team] += points;
+};
 // Example usage
 //console.log(tournamentWinner(competitions, results)); // Output: "Python"

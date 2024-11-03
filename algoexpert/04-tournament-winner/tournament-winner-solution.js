@@ -43,3 +43,42 @@ const tournamentWinner = (competitions, results) => {
 
   return currentBestTeam;
 };
+
+// Constants to represent the outcome of a game
+const HOME_TEAM_WON = 1;
+const POINTS = 3;
+
+function tournamentWinner(competitions, results) {
+  // Initialize a Map to keep track of each team's points
+  const scores = new Map();
+
+  // Loop through each competition
+  for (let i = 0; i < competitions.length; i++) {
+    // Destructure the home team and away team from the current competition
+    const [homeTeam, awayTeam] = competitions[i];
+    // Get the result of the current competition
+    const result = results[i];
+    // Determine the winning team based on the result
+    const winningTeam = result === HOME_TEAM_WON ? homeTeam : awayTeam;
+    // Get the current score of the winning team or set it to 0 if the team is not in the Map
+    const currentScore = scores.get(winningTeam) || 0;
+    // Update the score of the winning team by adding the points for a win
+    scores.set(winningTeam, currentScore + POINTS);
+  }
+
+  // Initialize variables to keep track of the team with the highest score
+  let currBestScore = 0;
+  let currBestTeam = "";
+
+  // Iterate through the scores Map to find the team with the highest score
+  scores.forEach((score, team) => {
+    if (score > currBestScore) {
+      // Update the current best team and score if the current team's score is higher
+      currBestScore = score;
+      currBestTeam = team;
+    }
+  });
+
+  // Return the team with the highest score
+  return currBestTeam;
+}
