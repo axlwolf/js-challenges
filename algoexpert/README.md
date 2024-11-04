@@ -50,6 +50,7 @@ The solutions are provided in Javascript.
 | :star: | Validate Subsequence |     🟩     | [validate-subsequence.js](https://github.com/axlwolf/js-challenges/blob/algoexpert/algoexpert/02-validate-subsequence/validate-subsequence.js) |
 | :star: | Sorted Squared Array |     🟩     | [sorted-squared-array.js](https://github.com/axlwolf/js-challenges/blob/algoexpert/algoexpert/03-sorted-squared-array/sorted-squared-array.js) |
 | :star: | Tournament Winner    |     🟩     | [tournament-winner.js](https://github.com/axlwolf/js-challenges/blob/algoexpert/algoexpert/04-tournament-winner/tournament-winner.js)          |
+| :star: | Non Constructible Change    |     🟩     | [tournament-winner.js](https://github.com/axlwolf/js-challenges/blob/algoexpert/algoexpert/05-non-constructible-change/non-constructible-change.js)          |
 
 <a href="#star-algo-expert">Go to Top</a>
 <br/>
